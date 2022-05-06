@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/file.css">
+    <script src="file.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+</head>
+
+<body>
+
+    <!--Hero Content-->
+    <section class="second-header">
+        <!--Navigation Bar-->
+        <nav>
+            <a href="Home.html"><img src="assets/images/marist-judo.svg" alt="Marist Judo Club Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Register.html">JOIN NOW</a></li>
+                    <li><a href="Announcements.html">ANNOUNCEMENTS</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Home.html">HOME</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+<section>
+    <div class="hero">
+        <h1>Announcements</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="assets/images/marist-judo.svg">
+                        <div>
+                            <h3>TRAINING CANCELLED NEXT WEEK!</h3>
+                            <h4>27/04/2022</h4>
+                        </div>
+                    </div>
+                    <p>Hi everyone, just letting you all know that training is cancelled next week due to school
+                        holidays. Have a great break!</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="assets/images/marist-judo.svg">
+                        <div>
+                            <h3>UPCOMING TOURNAMENT 15TH MAY</h3>
+                            <h4>20/04/2022</h4>
+                        </div>
+                    </div>
+                    <p>Olympia Judo Club is holding a Judo tournament from 9.00am until 1.00pm on Sunday
+                        the 15th May. Please talk to Patrick if interested. </p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="assets/images/marist-judo.svg">
+                        <div>
+                            <h3>CONGRATULATIONS!</h3>
+                            <h4>29/03/2022</h4>
+                        </div>
+                    </div>
+                    <p>Congratulations to all the participants in last week’s tournament, you all performed extremely
+                        well and
+                        represented Marist with pride!</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="assets/images/marist-judo.svg">
+                        <div>
+                            <h3>UPCOMING TOURNAMENT 17TH APRIL </h3>
+                            <h4>20/04/2022</h4>
+                        </div>
+                    </div>
+                    <p>On the 17th April, Marist Judo Club is holding a Judo tournament from 9.00am until 1.00pm on
+                        Sunday the 17th
+                        April. Please talk to Patrick if interested.</p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <i id="upArrow" class="fa fa-arrow-up"></i>
+                <i id="downArrow" class="fa fa-arrow-down"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+    <section>
+        <div class="hero2">
+            <div id="calendar"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+
+
+    <!--Footer-->
+    <footer>
+        <a class="logo" href="https://www.maristc.act.edu.au/"><img src="assets/images/Marist-Logo.svg"></a>
+        <div class="icons">
+            <a href="https://www.facebook.com/Marist-Judo-Club-172526462772212/"><i class="fa fa-facebook"></i></a>
+            <a href="grantbarclay@mcc.act.edu.au"><i class="fa fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
