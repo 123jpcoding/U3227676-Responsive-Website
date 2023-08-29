@@ -2,38 +2,28 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box
     ;
 }
 
 /*Hero Content*/
 .header {
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(1, 7, 27, 0.9)), url(HSA-Judo-Throw.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(1, 7, 27, 0.9)), url(LakeImage.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
 /*Logo*/
-.logo {
-    width: 220px;
-    height: auto;
-    align-items: center;
-    padding: 1rem;
-}
-
 nav img {
-    height: 90px;
-    position: relative;
-    padding: 4%;
+    width: 150px;
 }
 
 /*Navigation Bar*/
 nav {
     display: flex;
-    padding: 2px;
+    padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
@@ -46,7 +36,7 @@ nav {
 
 .nav-links ul li {
     list-style: none;
-    padding: 10px 12px;
+    padding: 8px 12px;
     float: right;
 }
 
@@ -57,12 +47,39 @@ nav {
     display: block;
 }
 
+/*Dropdown Menu*/
+.dropbtn {
+    color: white;
+    font-size: 13px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    float: right;
+    padding: 8px 12px;
+}
+
+
+.dropdown-content {
+    display: none;
+}
+
+.dropbtn:hover .dropdown-content {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    text-align: auto;
+    background-color: rgba(1, 7, 27, 0.1);
+    position: absolute;
+    color: #fff;
+}
+
+
 /*Navigation Bar Hover Effect*/
 .nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #7bc1df;
+    background: rgb(255, 213, 75);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -108,9 +125,9 @@ nav {
 }
 
 .hero-button:hover {
-    border: 1px solid #7bc1df;
-    background: rgba(4, 9, 30, 0.9);
-    color: #7bc1df;
+    border: 1px solid rgb(255, 213, 75);
+    background: rgba(4, 9, 30, 0.5);
+    color: rgb(255, 213, 75);
     transition: 0.5s;
 }
 
@@ -132,7 +149,7 @@ nav .fa {
     .nav-links {
         position: absolute;
         background: rgba(4, 9, 30, 0.9);
-        color: #7bc1df;
+        color: rgb(255, 213, 75);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -181,7 +198,11 @@ p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 8px;
+    padding: 10px;
+}
+
+.covid-link {
+    color: rgba(1, 7, 27, 0.9);
 }
 
 .row {
@@ -191,17 +212,16 @@ p {
 }
 
 .info-box {
-    flex-basis: 45%;
-    background: #7bc1df;
+    flex-basis: 31%;
+    background: rgb(255, 213, 75);
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /*Layout for Mobile*/
-@media(max-width: 900px) {
+@media(max-width: 700px) {
     .row {
         flex-direction: column;
     }
@@ -217,46 +237,37 @@ p {
 
 .location-col {
     flex-basis: 48%;
-    padding: 20px 2px;
+    padding: 30px 2px;
 }
 
 .location-col iframe {
     width: 100%;
 }
 
-.location-col h1,
-h2 {
+.location-col h1 {
     padding: 0 10px 0;
 }
 
 .location-col p {
-    padding: 12px 8px 16px;
+    padding: 15px 10px 20px;
 }
 
 /*Footer*/
 footer {
     width: 100%;
     text-align: center;
-    padding: 10px;
-    background-color: #004c81;
-}
-
-
-.logo img {
-    align-items: center;
-    display: inline-flex;
-    height: 120px;
+    padding: 30px 0;
 }
 
 .icons .fa {
-    color: #7bc1df;
+    color: rgba(1, 7, 27);
     margin: 0 13px;
     cursor: pointer;
-    padding: 15px 0;
+    padding: 18px 0;
 }
 
 .icons .fa:hover {
-    color: #ffff;
+    color: rgb(255, 213, 75);
     transition: 0.5s;
 }
 
@@ -268,12 +279,6 @@ footer {
     color: rgba(1, 7, 27);
 }
 
-.colour-block {
-    width: 100%;
-    background-color: #7bc1df;
-    padding: 15px;
-}
-
 .about-info {
     width: 80%;
     margin: auto;
@@ -281,8 +286,8 @@ footer {
 }
 
 .about-info-para {
-    flex-basis: 40%;
-    padding: 8px 6px;
+    flex-basis: 48%;
+    padding: 5px 2px;
 }
 
 .about-info-para img {
@@ -305,11 +310,11 @@ footer {
 
     .second-header .nav-links {
         background: rgba(4, 9, 30, 0.9);
-        color: #1a1cfd;
+        color: rgb(255, 213, 75);
     }
 }
 
-/*Our Coaches*/
+/*Our Team*/
 .team {
     width: 80%;
     margin: auto;
@@ -353,14 +358,14 @@ footer {
     text-align: center;
 }
 
-/*Registration Form*/
+/*Donation Form*/
 * {
     box-sizing: border-box;
 }
 
 .wrapper {
     background-color: #fff;
-    width: 600px;
+    width: 500px;
     padding: 25px;
     margin: 25px auto 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -373,6 +378,7 @@ footer {
     padding: 10px;
     margin-bottom: 8px;
     text-align: center;
+    border: 1px dashed rgba(1, 7, 27);
 }
 
 .wrapper h4 {
@@ -382,7 +388,7 @@ footer {
 
 .input-group {
     margin-bottom: 8px;
-    width: 80%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -413,10 +419,10 @@ footer {
 
 .input-box .name:focus,
 .dob:focus {
-    -webkit-box-shadow: #7bc1df;
-    -moz-box-shadow: 0 0 2px 1 px #7bc1df;
-    box-shadow: 0 0 2px 1 px #7bc1df;
-    border: 1px solid #7bc1df;
+    -webkit-box-shadow: rgb(255, 213, 75);
+    -moz-box-shadow: 0 0 2px 1 px rgb(255, 213, 75);
+    box-shadow: 0 0 2px 1 px rgb(255, 213, 75);
+    border: 1px solid rgb(255, 213, 75);
 }
 
 .input-box .icon {
@@ -440,7 +446,7 @@ footer {
 
 .name:focus+.icon {
     background-color: rgba(1, 7, 27);
-    color: #7bc1df;
+    color: rgb(255, 213, 75);
     border: 1px solid rgba(1, 7, 27);
     border: none;
     transition: 0.3s;
@@ -453,7 +459,7 @@ footer {
     background-color: #fcfcfc;
     transition: 0.3s;
     outline: none;
-    border: 1px solid #7bc1df;
+    border: 1px solid rgb(255, 213, 75);
     border-right: 3px;
 }
 
@@ -482,14 +488,14 @@ footer {
 }
 
 .radio:checked+label {
-    background-color: #7bc1df;
+    background-color: rgb(255, 213, 75);
     color: rgba(1, 7, 27);
     transition: 0.3s;
 }
 
 .input-box button {
-    width: 30%;
-    background-color: #7bc1df;
+    width: 100%;
+    background-color: rgb(255, 213, 75);
     color: rgba(1, 7, 27);
     border: none;
     padding: 15px;
@@ -502,242 +508,110 @@ footer {
 .input-box button:hover {
     cursor: pointer;
     background-color: rgba(1, 7, 27);
-    color: #7bc1df;
+    color: rgb(255, 213, 75);
 }
 
 
-/*Achievement Boxes*/
-.achievement li {
-    text-align: left;
-    margin: 0 20px;
+/*Supporter Boxes*/
+.supporters li {
+    text-align: center;
+    list-style: none;
 }
 
-/*Judo Gi Shop*/
-.row2 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
+/*2016 Page*/
 
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 20px;     
-}
-
-.col-2 h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-
-.btn {
-    display: inline-block;
-    background: #7bc1df;
-    color: #ffff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-}
-
-.btn {
-    background-color: #7bc1df;
-    color: rgba(1, 7, 27);
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: rgba(1, 7, 27);
-    color: #7bc1df;
-    transition: 0.3s;
-}
-
-.small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.single-product {
-    margin-top: 80px;
-}
-.single-product .col-2 img {
-    padding: 0;
-}
-.single-product .col-2 {
-    padding: 20px;
-}
-.single-product h4 {
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-.single-product select {
-    display: block;
-    padding: 10px;
-    margin-top: 20px;
-}
-.single-product input {
-    width: 50px;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 20px;
-    margin-right: 10px;
-    border: 1px solid #7bc1df;
-}
-input:focus {
-    outline: none;
-}
-.single-product .fa {
-    color:#7bc1df;
-    margin-left: 10px;
-}
-
-@media only screen and (max-width: 600px){
-    .row {
-        text-align: center;
-    }
-    .col-2 {
-        flex-basis: 100%;
-    }
-    .single-product .row {
-        text-align: left;
-    }
-    .single-product .col-2 {
-        padding: 20px 0;
-    }
-    .single-product h1 {
-        font-size: 26px;
-        line-height: 22px;
-    }
-}
-
-
-/*Announcements Scroll*/
-.hero {
+/*YouTube Video Embed*/
+.iframe-container {
+    position: relative;
     width: 100%;
-    height: 90vh;
-    background: #f6fbff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
-.hero h1 {
-    font-size: 30px;
-    position: relative;
-    margin-bottom: 80px;
+.YouTube {
+    width: 560;
+    height:315;
+    border: 0;
 }
 
-.hero h1:after {
-    content:'';
-    width: 150px;
-    height: 3px;
-    background: linear-gradient(to right, #004c81,#7bc1df);
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.review-box {
-    width: 90%;
-    max-width: 700px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.25);
-    position: relative;
-    overflow: hidden;
-}
-
-.card {
-    height: 300px;
-    padding: 40px;
-    color: #777;
-    line-height: 22px;
-    box-sizing: border-box;
-    background: #ffff;
-    position: relative;
-    z-index: 1;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.profile img {
-    width: 50px;
-    margin-right: 20px;
-}
-
-.profile h3 {
-    font-size: 26px;
-    color: #7bc1df;
-    margin-bottom: 8px;
-}
-
-#slide {
-    width: 100%;
-    padding-right: 60px;
-    box-sizing: border-box;
+.iframe-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.5s;
-}
-
-.sidebar {
-    width: 60px;
-    height: 100%;
-    padding: 15px 0;
-    background: #004c81;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sidebar .fa {
-    width: 25px;
-    padding: 5px;
-    color: #7bc1df;
-    border-radius: 50%;
-    cursor: pointer; 
-    transition: 0.3s;
-}
-
-.sidebar .fa:hover {
-    color: #ffff;
-}
-
-::selection {
-    background: #004c81;
-    color: #ffff;
-}
-
-/*Calendar*/
-.hero2 {
     width: 100%;
-    height: 800px;
-    background: linear-gradient(45deg, #004c81, #7bc1df);
+    height: 100%;
+}
+
+/*Photo Gallery*/
+.gallery-section {
+    width: 100%;
+}
+
+.gallery-section .gallery-wrap {
+    padding-top: 10px;
+}
+
+.gallery-section .gallery-wrap .gallery-images {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery-section .gallery-wrap .gallery-images .gallery {
+    width: 100%;
     position: relative;
 }
 
-#calendar {
-    width: 80%;
+
+.gallery-section .gallery-wrap .gallery-images .gallery .image-section {
+    width: 100%;
+}
+
+.gallery-section .gallery-wrap .gallery-images .gallery .image-section img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #fff;
+    padding: 5px;
+    display: block;
+}
+
+.gallery-section .gallery-wrap .gallery-images .gallery .caption {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 15px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-section .gallery-wrap .gallery-images .gallery .caption:hover {
+    opacity: 1;
+}
+
+.gallery-section .gallery-wrap .gallery-images .gallery .caption p {
+    color: #fff;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 992px) {
+    .gallery-section .gallery-wrap .gallery-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-section .gallery-wrap .gallery-images {
+        grid-template-columns: 1fr;
+    }
 }
